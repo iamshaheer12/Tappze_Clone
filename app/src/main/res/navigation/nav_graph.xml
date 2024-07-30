@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash_fragment">
+
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.example.tappze_clone.views.SplashFragment"
+        android:label="fragment_splash_fragment"
+        tools:layout="@layout/fragment_splash_fragment" >
+        <action
+            android:id="@+id/action_splash_fragment_to_starting_fragment"
+            app:destination="@id/starting_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/starting_fragment"
+        android:name="com.example.tappze_clone.views.StartingFragment"
+        android:label="fragment_starting_fragment"
+        tools:layout="@layout/fragment_starting_fragment" >
+        <action
+            android:id="@+id/action_starting_fragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_starting_fragment_to_signUpFragment2"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.tappze_clone.views.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.tappze_clone.views.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+</navigation>

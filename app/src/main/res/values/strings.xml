@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tappze_Clone</string>
+    <string name="starting_screen_text">It\'s not just a Tap, it\'s a way of thinking</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_account">Create Account</string>
+    <string name="existing_member">Existing Member? </string>
+    <string name="sign_in">Sign In</string>
+    <string name="policy_terms">Going Forward, I agree to the privacy Policy /&amp; Terms of Service</string>
+    <string name="welcome_back">Welcome back,\n Sign in Your account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="sign_up">sign Up</string>
+</resources>
