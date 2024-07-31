@@ -44,4 +44,19 @@
             android:id="@+id/action_logInFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.tappze_clone.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/NFCFragment"
+        android:name="com.example.tappze_clone.NFCFragment"
+        android:label="fragment_n_f_c"
+        tools:layout="@layout/fragment_n_f_c" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.tappze_clone.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

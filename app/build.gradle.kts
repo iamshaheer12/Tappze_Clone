@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -9,6 +11,10 @@ plugins {
 android {
     namespace = "com.example.tappze_clone"
     compileSdk = 34
+   viewBinding {
+       enable = true
+//        enabled = true
+   }
 
     defaultConfig {
         applicationId = "com.example.tappze_clone"
@@ -39,13 +45,13 @@ android {
 }
 
 dependencies {
-    implementation ("com.github.bumptech.glide:glide:4.9.0")
-    implementation ("com.google.dagger:hilt-android:2.38.1")
+    implementation ("com.github.bumptech.glide:glide:4.14.2") // Update to the latest version
+    implementation ("com.google.dagger:hilt-android:2.47") // Update to the latest version
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
-    kapt ("com.google.dagger:hilt-android-compiler:2.38.1")
+    kapt ("com.google.dagger:hilt-android-compiler:2.47") // Update to the latest version
     kapt ("androidx.hilt:hilt-compiler:1.0.0")
-    implementation ("androidx.activity:activity-ktx:1.4.0")
+    implementation ("androidx.activity:activity-ktx:1.6.0") // Update to the latest version
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

@@ -3,44 +3,39 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".views.StartingFragment">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/Tappze1"
+        android:src="@drawable/tappze1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
     <TextView
         android:id="@+id/st_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/starting_screen_text"
         android:textFontWeight="800"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-       />
-
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
     <Button
         android:id="@+id/create_account_button"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-        android:layout_marginStart="24dp"
+        android:layout_height="55dp"
+        android:layout_margin="16dp"
         android:backgroundTint="@color/black"
         android:text="@string/create_account"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/st_text" />
-
     <TextView
         android:id="@+id/existing_member_text"
         android:layout_width="wrap_content"
@@ -48,13 +43,13 @@
         android:text="@string/existing_member" />
 
     <TextView
-        android:clickable="true"
         android:id="@+id/sign_in_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_in"
         android:textStyle="bold"
-      />
+        android:clickable="true" />
+
     <androidx.constraintlayout.helper.widget.Flow
         android:id="@+id/flow"
         android:layout_marginTop="20dp"
@@ -62,12 +57,10 @@
         android:layout_height="wrap_content"
         app:flow_wrapMode="chain"
         app:flow_horizontalGap="2dp"
-
         app:constraint_referenced_ids="existing_member_text,sign_in_text"
         app:layout_constraintTop_toBottomOf="@+id/create_account_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-       />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <TextView
@@ -84,5 +77,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
